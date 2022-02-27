@@ -16,6 +16,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - name: Install Cargo
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: "1.59.0"
+        override: true
+        default: true
     - name: rustc version
       run: rustc --version && cargo --version
     - name: Build
