@@ -2,6 +2,7 @@
 name = "log-converter"
 version = "1.0.0"
 edition = "2021"
+rust-version = "1.58.0"
 
 [dependencies]
 json = "0"
