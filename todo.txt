@@ -1,0 +1,18 @@
+Done
+
+* dockerfile
+* change name
+
+Todo
+
+* add git repo
+* github actions build, test, publish
+* read from stdin in a loop
+* look up json format for k8s logging
+* get example logs from KC and Camunda
+* define struct for log entries
+* define all necessary parsers
+* define json output format
+* unit test parsers
+* unit test json serialiser
+* integration test

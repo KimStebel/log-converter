@@ -1,0 +1,9 @@
+[package]
+name = "log-converter"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+json = "0"
+regex = "1"
+chrono = "0.4"
