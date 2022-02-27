@@ -13,13 +13,13 @@ env:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
+    - name: rustc version
+      run: rustc --version && cargo --version
     - name: Build
-      run: cargo build --release
+      run: cargo build --release && strip target/release/log-converter
     - name: Run tests
       run: cargo test
     - name: Release

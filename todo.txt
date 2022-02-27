@@ -8,12 +8,17 @@ Done
 
 Todo
 
+* set versions for github actions and runs-on
+* output some json
 * read from stdin in a loop
 * look up json format for k8s logging
 * get example logs from KC and Camunda
 * define struct for log entries
-* define all necessary parsers
-* define json output format
+* define all necessary parsers and parse input with a list of parsers
+* define json output format 
+* make parsers configurable
+* documentation
 * unit test parsers
 * unit test json serialiser
 * integration test
+
