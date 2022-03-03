@@ -1,0 +1,1 @@
+echo 'test' | ./target/release/log-converter | grep "INFO" >/dev/null
