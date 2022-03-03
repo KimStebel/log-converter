@@ -10,18 +10,23 @@ Done
 * look up json format for k8s logging
 * define json output format 
 * define all necessary parsers and parse input with a list of parsers
+* pass in current time
+* push to docker hub
+* run in k8s and look at logs with stackdriver
+* documentation
 
 Todo
 
-* pass in current time
-
-* push to gcr
-* run in k8s and look at logs with stackdriver
-
-
 * get example logs from KC and Camunda for tests
-* documentation
 * unit test parsers
+
+    echo -e "Lala test\nERROR lala warn no\r\n test WARN\ndebugging is fun" | ./target/debug/log-converter 
+    {"severity":"INFO","message":"Lala test","timestamp":{"seconds":0,"nanos":0}}
+    {"severity":"ERROR","message":"ERROR lala warn no","timestamp":{"seconds":0,"nanos":0}}
+    {"severity":"WARN","message":"test WARN","timestamp":{"seconds":0,"nanos":0}}
+    {"severity":"INFO","message":"debugging is fun","timestamp":{"seconds":0,"nanos":0}}
+
+
 * unit test json serialiser
 * integration test
 
