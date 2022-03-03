@@ -22,8 +22,6 @@ jobs:
         toolchain: "1.59.0"
         override: true
         default: true
-    - name: rustc version
-      run: rustc --version && cargo --version
     - name: Build
       run: cargo build --release && strip target/release/log-converter
     - name: Run tests

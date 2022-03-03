@@ -4,21 +4,25 @@ Done
 * change name
 * add git repo
 * github actions build, test, publish
-
-
-Todo
-
 * set versions for github actions and runs-on
 * output some json
 * read from stdin in a loop
 * look up json format for k8s logging
-* get example logs from KC and Camunda
-* define struct for log entries
-* define all necessary parsers and parse input with a list of parsers
 * define json output format 
-* make parsers configurable
+* define all necessary parsers and parse input with a list of parsers
+
+Todo
+
+* pass in current time
+
+* push to gcr
+* run in k8s and look at logs with stackdriver
+
+
+* get example logs from KC and Camunda for tests
 * documentation
 * unit test parsers
 * unit test json serialiser
 * integration test
 
+* make parsers configurable
